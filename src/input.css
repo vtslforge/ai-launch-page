@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.section-properties {
+  @apply w-full h-screen;
+}
+.flex-properties{
+    @apply flex justify-evenly items-center flex-col
+}
