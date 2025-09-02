@@ -4,25 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <main class="bg-black w-full">
       <!-- section 1 for the wishlist tab -->
       <section
-        class="bg-amber-400 section-properties flex flex-col justify-center items-center"
+        class="bg-cover bg-no-repeat bg-center section-properties flex flex-col justify-center items-center bg-[url('../assets/bg-sec-1.svg')]"
       >
-        <section class="bg-amber-50 h-2/4 w-2/4 flex-properties">
-          <article class="bg-black border">Early Access</article>
-          <article>hyy</article>
-          <article>hyy</article>
-          <article>hyy</article>
+        <!-- main container -->
+        <section
+          class="border-4 h-1/2 w-full sm:w-11/12 md:w-10/12 lg:w-6/12 flex justify-between items-center flex-col"
+        >
+          <!-- logo/heading button area -->
+          <button class="border cursor-pointer glass-effect-button">
+            Nx AI
+          </button>
+          <article><p class="text-5xl font-inter"style="font-family: 'Inter', sans-serif;">Next Big Thing Loading…</p></article>
+          <!-- box container inside -->
+          <article
+            class="border h-2/4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex justify-evenly flex-col items-center"
+          >
+            <p>Join our waitlist</p>
+            <p class="text-center" style="font-family: 'Inter', sans-serif;">
+              Join our newsletter and stay ahead of the curve! Get the latest
+              updates and exclusive insights on Nx AI, delivered straight to
+              your inbox.
+            </p>
+            <!-- email container -->
+            <div class="gap-5 flex justify-center h-2/12 w-full">
+              <input
+                type="email"
+                placeholder="Enter email"
+                class="border text-center rounded-full w-1/2"
+              /><button class="border cursor-pointer w-1/4 rounded-full">
+                Join
+              </button>
+            </div>
+          </article>
+          <!-- social buttons -->
+          <article>
+            <button class="border w-5 h-5 cursor-pointer"></button>
+            <button class="border w-5 h-5 cursor-pointer"></button>
+            <button class="border w-5 h-5 cursor-pointer"></button>
+          </article>
         </section>
       </section>
       <!-- wishlist tab ends -->
-      <section class="bg-orange-700 section-properties"></section>
-      <section class="bg-green-700 section-properties"></section>
-      <section class="bg-blue-700 section-properties"></section>
+      <section class="bg-black section-properties"></section>
+      <section class="bgblbg-black section-properties"></section>
+      <section class="bblbg-black section-properties"></section>
     </main>
   </body>
 </html>
