@@ -2,8 +2,11 @@
 .section-properties {
   @apply w-full h-screen;
 }
-.glass-effect-button{
- @apply px-6 py-3 rounded-xl text-white font-semibold 
+.glass-effect-button {
+  @apply px-6 py-3 rounded-xl text-white font-semibold 
 bg-white/10 backdrop-blur-lg border border-white/20 
-shadow-md hover:bg-white/20 transition
+shadow-md hover:bg-white/20 transition;
+}
+.interfont{
+  @apply font-[inter];
 }
