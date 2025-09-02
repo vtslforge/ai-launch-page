@@ -7,6 +7,10 @@
 bg-white/10 backdrop-blur-lg border border-white/20 
 shadow-md hover:bg-white/20 transition;
 }
-.interfont{
+.interfont {
   @apply font-[inter];
 }
+.main-text-color {
+  @apply bg-gradient-to-t from-[#C6AFDB] to-[#FBFCFA] bg-clip-text text-transparent;
+}
+
