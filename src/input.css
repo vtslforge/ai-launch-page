@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .section-properties {
   @apply w-full h-screen;
 }
@@ -13,4 +14,6 @@ shadow-md hover:bg-white/20 transition;
 .main-text-color {
   @apply bg-gradient-to-t from-[#C6AFDB] to-[#FBFCFA] bg-clip-text text-transparent;
 }
-
+.big-text{
+  @apply font-[Montserrat];
+}
