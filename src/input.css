@@ -71,3 +71,14 @@ shadow-md hover:bg-white/20 transition;
     opacity: 1;
   }
 }
+/* colors */
+.gradient-text {
+  /* Gradient fill from top to bottom */
+  background: linear-gradient(to bottom, #ff0000, #ffff00); /* adjust colors */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Red stroke */
+  -webkit-text-stroke: 1px red;
+}
+
