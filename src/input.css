@@ -32,53 +32,24 @@ shadow-md hover:bg-white/20 transition;
 }
 
 .tracking-in-contract {
+  --final-spacing: clamp(1rem, 2vw, 3rem);
+  letter-spacing: var(--final-spacing);
   animation: tracking-in-contract 3s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 @keyframes tracking-in-contract {
   0% {
-    letter-spacing: 2em; /* increased from 1em to 2em */
+    letter-spacing: 2em;
     opacity: 0;
   }
   40% {
     opacity: 0.6;
   }
   100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: clamp(1rem, 2vw, 3rem);
+    letter-spacing: var(--final-spacing);
     opacity: 1;
   }
 }
 /* colors */
-.gradient-text {
-  /* Gradient fill from top to bottom */
-  background: linear-gradient(to bottom, #ff0000, #ffff00); /* adjust colors */
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 
-  /* Red stroke */
-  -webkit-text-stroke: 1px red;
-}
 

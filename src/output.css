@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -337,9 +336,6 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 2px;
   }
-  .border-amber-50 {
-    border-color: var(--color-amber-50);
-  }
   .border-white {
     border-color: var(--color-white);
   }
@@ -381,11 +377,20 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .pl-1 {
+    padding-left: calc(var(--spacing) * 1);
+  }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
+  }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
   }
   .text-center {
     text-align: center;
@@ -419,9 +424,6 @@
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
-  }
-  .text-\[\#141318\] {
-    color: #141318;
   }
   .text-transparent {
     color: transparent;
@@ -466,17 +468,8 @@
     --tw-outline-style: none;
     outline-style: none;
   }
-  .\[-webkit-text-stroke\:1px\] {
-    -webkit-text-stroke: 1px;
-  }
-  .\[-webkit-text-stroke\:1px_\] {
-    -webkit-text-stroke: 1px ;
-  }
-  .\[-webkit-text-stroke\:1px_red\] {
-    -webkit-text-stroke: 1px red;
-  }
-  .\[-webkit-text-stroke\:1px_white\] {
-    -webkit-text-stroke: 1px white;
+  .\[-webkit-text-stroke\:1px_gray\] {
+    -webkit-text-stroke: 1px gray;
   }
   .hover\:opacity-100 {
     &:hover {
@@ -583,6 +576,8 @@
   animation: fadein 1s ease-in forwards;
 }
 .tracking-in-contract {
+  --final-spacing: clamp(1rem, 2vw, 3rem);
+  letter-spacing: var(--final-spacing);
   animation: tracking-in-contract 3s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 @keyframes tracking-in-contract {
@@ -594,36 +589,9 @@
     opacity: 0.6;
   }
   100% {
-    letter-spacing: normal;
+    letter-spacing: var(--final-spacing);
     opacity: 1;
   }
-}
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: clamp(1rem, 2vw, 3rem);
-    opacity: 1;
-  }
-}
-.gradient-text {
-  background: linear-gradient(to bottom, #ff0000, #ffff00);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px red;
 }
 @property --tw-rotate-x {
   syntax: "*";
