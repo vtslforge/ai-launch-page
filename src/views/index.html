@@ -22,22 +22,33 @@
       <!-- main container -->
       <section class="h-2/3 w-full sm:w-11/12 md:w-10/12 lg:w-6/12 flex justify-evenly items-center flex-col">
         <!-- logo/heading button area -->
-        <button class="bg-white flex justify-evenly items-center rounded-full cursor-pointer h-10 w-40 p-1">
+        <button
+          class="border-white border-t-2 flex justify-evenly items-center rounded-full cursor-pointer h-15 w-15 p-1">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 44.343 46">
-            <path
+            <defs>
+              <!-- Linear gradient from top to bottom -->
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:white; stop-opacity:1" />
+                <stop offset="100%" style="stop-color:gray; stop-opacity:1" />
+              </linearGradient>
+            </defs>
+
+            <!-- Apply the gradient fill to the path -->
+            <path fill="url(#grad1)"
               d="M 22.15625 0 A 1.0001 1.0001 0 0 0 21.464844 0.29296875 L 21.445312 0.3125 L 0.87890625 20.878906 C -0.28429206 22.042104 -0.28429206 23.957896 0.87890625 25.121094 L 21.464844 45.707031 A 1.0001 1.0001 0 0 0 22.878906 45.707031 L 22.898438 45.6875 L 43.464844 25.121094 C 44.628041 23.957896 44.628041 22.042104 43.464844 20.878906 L 22.878906 0.29296875 A 1.0001 1.0001 0 0 0 22.15625 0 z M 22.234375 2.4765625 L 42.050781 22.292969 C 42.449681 22.691868 42.449681 23.308132 42.050781 23.707031 L 25.933594 39.824219 C 26.052442 39.242277 26.138227 38.651984 26.169922 38.052734 A 1.0001 1.0001 0 0 0 26.169922 37.947266 C 26.036349 35.421796 25.108902 33.01145 23.537109 31.050781 L 30.878906 23.707031 A 1.0001 1.0001 0 0 0 30.878906 22.292969 L 22.898438 14.3125 C 21.275291 12.594247 20.319287 10.358489 20.181641 8 C 20.299146 5.9866151 21.018169 4.0654641 22.234375 2.4765625 z M 18.410156 6.1757812 C 18.291308 6.7577229 18.205523 7.3480156 18.173828 7.9472656 A 1.0001 1.0001 0 0 0 18.173828 8.0527344 C 18.307423 10.578631 19.236316 12.988371 20.808594 14.949219 L 13.464844 22.292969 A 1.0001 1.0001 0 0 0 13.464844 23.707031 L 21.464844 31.708984 C 23.075846 33.424403 24.02503 35.651211 24.162109 38 C 24.044604 40.013385 23.325581 41.934536 22.109375 43.523438 L 2.2929688 23.707031 C 1.8940686 23.308131 1.8940686 22.691869 2.2929688 22.292969 L 18.410156 6.1757812 z M 22.171875 16.414062 L 28.757812 23 L 22.171875 29.585938 L 15.585938 23 L 22.171875 16.414062 z">
             </path>
           </svg>
-          <p class="interfont text-black">AetherMind</p>
         </button>
+
         <article>
-          <p class="leading-tight text-5xl interfont font-extrabold text-center main-text-color">
+          <p
+            class="leading-tight text-5xl interfont font-extrabold text-center bg-gradient-to-r from-[#baa85a] via-[#bc5bdf] to-[#1b25e4] bg-clip-text text-transparent">
             Next Big Thing Loading…
           </p>
         </article>
         <!-- box container inside -->
         <article
-          class=" h-3/4 w-full max-w-9/10 sm:max-w-sm md:max-w-md lg:max-w-lg flex justify-evenly flex-col items-center rounded-3xl">
+          class="h-3/4 w-full max-w-9/10 sm:max-w-sm md:max-w-md lg:max-w-lg flex justify-evenly flex-col items-center rounded-3xl">
           <p class="interfont main-text-color text-3xl font-bold">
             Join our waitlist
           </p>
@@ -47,11 +58,11 @@
             your inbox.
           </p>
           <!-- email container -->
-          <div class="gap-5 flex justify-center h-2/12 w-full">
-            <input type="email" placeholder="Enter email"
-              class="border-white border text-center rounded-full w-1/2 max-h-12" /><button
-              class="cursor-pointer w-1/4 rounded-full bg-white max-h-12">
-              <p class="interfont">Join</p>
+          <div class=" gap-5 flex justify-center h-2/12 w-full">
+            <div class="bg-[#141318]  max-h-12 w-max flex items-center rounded-full pl-4"><svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg><input type="email" placeholder="Enter email"
+                class=" text-left text-white placeholder-white pl-2  w-full h-full bg-inherit rounded-r-full outline-none placeholder-text caret-white caret-" /></div><button
+              class="joinbtn cursor-pointer w-1/4 rounded-full bg-white max-h-12 ">
+              <p class="interfont ">Join</p>
             </button>
           </div>
           <!-- social buttons -->
@@ -91,6 +102,7 @@
     <section class="bgblbg-black section-properties"></section>
     <section class="bblbg-black section-properties"></section>
   </main>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
