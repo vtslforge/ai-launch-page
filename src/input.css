@@ -28,7 +28,7 @@ shadow-md hover:bg-white/20 transition;
 }
 /* Animations */
 .my-fade {
-  animation: fadein 1s ease-in forwards;
+ animation: fadein 3s ease-in forwards;
 }
 
 .tracking-in-contract {
@@ -51,5 +51,10 @@ shadow-md hover:bg-white/20 transition;
   }
 }
 /* colors */
-
+.gradient-text-dark-to-white {
+  background: linear-gradient(to top,#ffffff00, #3a3838 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 

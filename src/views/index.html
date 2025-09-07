@@ -14,9 +14,9 @@
 </head>
 
 <body>
-  <main class="bg-black w-full  ">
-    <!-- section 1 for the wishlist tab -->
-    <section class="section-properties flex flex-col justify-center items-center bg-black ">
+  <main class="bg-black w-full">
+    <!-- section 1 opening tab -->
+    <section class="section-properties flex flex-col justify-center items-center  relative bg-black ">
       <!-- main container -->
       <section class="h-2/3 w-full sm:w-11/12 md:w-10/12 lg:w-6/12 flex justify-evenly items-center flex-col ">
         <!-- logo/heading button area -->
@@ -46,13 +46,13 @@
         </article>
         <!-- box container inside -->
         <article
-          class="h-3/4 w-full max-w-9/10 sm:max-w-sm md:max-w-md lg:max-w-lg flex justify-evenly flex-col items-center rounded-3xl">
+          class="h-3/4 w-full max-w-9/10 sm:max-w-sm md:max-w-md lg:max-w-xl flex justify-evenly flex-col items-center rounded-3xl">
           <p class="interfont main-text-color text-3xl font-bold">
             Join our waitlist
           </p>
-          <p class="text-center interfont main-text-color ml-5 mr-5">
+          <p class="text-center interfont text-xl text-white ml-5 mr-5">
             Join our newsletter and stay ahead of the curve! Get the latest
-            updates and exclusive insights on Nx AI, delivered straight to
+            updates and exclusive insights on Aethermind, delivered straight to
             your inbox.
           </p>
           <!-- email container -->
@@ -65,7 +65,7 @@
               </svg><input type="email" placeholder="Enter email"
                 class=" text-left text-white placeholder-white pl-2  w-full h-full bg-inherit rounded-r-full outline-none placeholder-text caret-white caret-" />
             </div><button class="joinbtn cursor-pointer w-1/4 rounded-full bg-white max-h-12 ">
-              <p class="interfont ">Join</p>
+              <p class="interfont ">Sign up</p>
             </button>
           </div>
           <!-- social buttons -->
@@ -95,18 +95,30 @@
         </article>
 
       </section>
-      <div class="overflow-hidden bottom-0 absolute w-full text-center flex pl-2 justify-center">
+      <div class="overflow-hidden absolute bottom-0 left-0 right-0 w-full text-center flex pl-2 justify-center">
         <p
-          class="p-0 m-0 text-[clamp(2rem,8vw,12rem)]  android-ios leading-[1] big-text font-extrabold text-transparent [-webkit-text-stroke:1px_gray]  tracking-in-contract">
+          class="p-0 m-0 text-[clamp(2rem,8vw,12rem)] android-ios leading-[1] big-text font-extrabold gradient-text-dark-to-white tracking-in-contract">
           AETHERMIND
         </p>
       </div>
     </section>
 
-    <!-- wishlist tab ends -->
-    <section class="section-properties"></section>
-    <section class="section-properties"></section>
-    <section class="section-properties"></section>
+    <!-- section 1 ends -->
+    <!-- section 2 start -->
+    <section class="section-properties  bg-amber-300 flex flex-col">
+      <article class="bg-amber-50 h-1/2 flex flex-row border-2 p-3 gap-2 ">
+        <div class="bg-red-500 h-full w-1/3"></div>
+        <div class="bg-blue-500 h-full w-1/3"></div>
+        <div class="bg-green-500 h-full w-1/3"></div>
+      </article>
+      <article class="bg-amber-500 h-1/2 flex flex-row border-2">
+        <div class="bg-red-500 h-full w-1/2"></div>
+        <div class="bg-blue-500 h-full w-1/2"></div>
+      </article>
+    </section>
+    <!-- section 2 ends -->
+    <section class="section-properties  bg-amber-700"></section>
+    <section class="section-properties  bg-amber-950"></section>
   </main>
   <script src="/js/script.js"></script>
 </body>
