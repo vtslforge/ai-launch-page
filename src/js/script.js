@@ -39,33 +39,36 @@ function placeholderbtn() {
 placeholderbtn();
 
 function scrollable_card() {
-  const card = document.getElementById('scrollable-card');
-  let isMousedown = false;
-  let startX;
-  let scrollLeft;
+  // Select both cards using their IDs
+  const cards = document.querySelectorAll('#scrollable-card, #scrollable-card2');
 
-  card.addEventListener('mousedown', (e) => {
-    if (e.button !== 0) return;
-    isMousedown = true;
-    startX = e.pageX - card.offsetLeft;
-    scrollLeft = card.scrollLeft;
+  cards.forEach((card) => {
+    let isMousedown = false;
+    let startX;
+    let scrollLeft;
+    card.style.scrollBehavior = "smooth";
+    // Start dragging
+    card.addEventListener('mousedown', (e) => {
+      if (e.button !== 0) return; // Only left-click
+      isMousedown = true;
+      startX = e.pageX - card.offsetLeft;
+      scrollLeft = card.scrollLeft;
+    });
+
+    // Stop dragging on mouseup or leave
+    card.addEventListener('mouseup', () => { isMousedown = false; });
+    card.addEventListener('mouseleave', () => { isMousedown = false; });
+
+    // Dragging motion
+    card.addEventListener('mousemove', (e) => {
+      if (!isMousedown) return;
+      e.preventDefault();
+      const x = e.pageX - card.offsetLeft;
+      const walk = (x - startX) * 1; // Scroll speed multiplier
+      card.scrollLeft = scrollLeft - walk;
+    });
   });
 
-  card.addEventListener('mouseleave', () => {
-    isMousedown = false;
-  });
-
-  card.addEventListener('mouseup', () => {
-    isMousedown = false;
-  });
-
-  card.addEventListener('mousemove', (e) => {
-    if (!isMousedown) return;
-    e.preventDefault();
-    const x = e.pageX - card.offsetLeft;
-    const walk = (x - startX) * 1;
-    card.scrollLeft = scrollLeft - walk;
-  });
 }
 
 scrollable_card();
