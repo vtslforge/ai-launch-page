@@ -37,3 +37,36 @@ function placeholderbtn() {
 }
 
 placeholderbtn();
+
+function scrollable_card() {
+  const card = document.getElementById('scrollable-card');
+  let isMousedown = false;
+  let startX;
+  let scrollLeft;
+
+  card.addEventListener('mousedown', (e) => {
+    if (e.button !== 0) return;
+    isMousedown = true;
+    startX = e.pageX - card.offsetLeft;
+    scrollLeft = card.scrollLeft;
+  });
+
+  card.addEventListener('mouseleave', () => {
+    isMousedown = false;
+  });
+
+  card.addEventListener('mouseup', () => {
+    isMousedown = false;
+  });
+
+  card.addEventListener('mousemove', (e) => {
+    if (!isMousedown) return;
+    e.preventDefault();
+    const x = e.pageX - card.offsetLeft;
+    const walk = (x - startX) * 1;
+    card.scrollLeft = scrollLeft - walk;
+  });
+}
+
+scrollable_card();
+
