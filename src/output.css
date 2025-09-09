@@ -458,47 +458,29 @@
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\'\'\)\] {
-    background-image: url('');
+  .bg-\[url\(\'\.\.\/assets\/\.svg\'\)\] {
+    background-image: url('../assets/.svg');
   }
-  .bg-\[url\(\'\.\.\/assets\/21251821_6424535\.svg\'\)\] {
-    background-image: url('../assets/21251821_6424535.svg');
-  }
-  .bg-\[url\(\'\.\.\/assets\/Group\.svg\'\)\] {
-    background-image: url('../assets/Group.svg');
+  .bg-\[url\(\'\.\.\/assets\/Group11\.svg\'\)\] {
+    background-image: url('../assets/Group11.svg');
   }
   .bg-\[url\(\'\.\.\/assets\/brain\.svg\'\)\] {
     background-image: url('../assets/brain.svg');
   }
-  .bg-\[url\(\'\.\.\/assets\/group\.svg\'\)\] {
-    background-image: url('../assets/group.svg');
+  .bg-\[url\(\'\.\.\/assets\/ciimp\.svg\'\)\] {
+    background-image: url('../assets/ciimp.svg');
   }
-  .bg-\[url\(\'\.\.\/assets\/nlu\.svg\'\)\] {
-    background-image: url('../assets/nlu.svg');
+  .bg-\[url\(\'\.\.\/assets\/imgvid\.svg\'\)\] {
+    background-image: url('../assets/imgvid.svg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/neurallanguage\.svg\'\)\] {
+    background-image: url('../assets/neurallanguage.svg');
   }
   .bg-\[url\(\'\.\.\/assets\/nlu1\.svg\'\)\] {
     background-image: url('../assets/nlu1.svg');
   }
   .bg-\[url\(\'\.\.\/assets\/persona\.svg\'\)\] {
     background-image: url('../assets/persona.svg');
-  }
-  .bg-\[url\(\'\.\/\'\)\] {
-    background-image: url('./');
-  }
-  .bg-\[url\(\'\.\/src\/assets\/21251821_6424535\.svg\'\)\] {
-    background-image: url('./src/assets/21251821_6424535.svg');
-  }
-  .bg-\[url\(\'\/\'\)\] {
-    background-image: url('/');
-  }
-  .bg-\[url\(\'\/src\/assets\/21251821_6424535\.svg\'\)\] {
-    background-image: url('/src/assets/21251821_6424535.svg');
-  }
-  .bg-\[url\(\'…\'\)\] {
-    background-image: url('…');
-  }
-  .bg-\[url\(\)\] {
-    background-image: url();
   }
   .from-\[\#baa85a\] {
     --tw-gradient-from: #baa85a;
