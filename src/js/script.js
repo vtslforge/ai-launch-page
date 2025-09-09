@@ -36,7 +36,7 @@ function placeholderbtn() {
   });
 }
 
-placeholderbtn();
+
 
 function scrollable_card() {
   // Select both cards using their IDs
@@ -71,5 +71,29 @@ function scrollable_card() {
 
 }
 
-scrollable_card();
 
+function dropin() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("drop-in");
+          entry.target.classList.remove("translate-y-[-50px]", "opacity-0");
+          observer.unobserve(entry.target); // Animate only once
+        }
+      });
+    }, {
+      threshold: 0.5 // Trigger when 50% of the element is visible
+    });
+
+    const elements = document.querySelectorAll(".drop-element");
+    elements.forEach(el => {
+      observer.observe(el);
+    });
+  });
+}
+
+
+dropin();
+scrollable_card();
+placeholderbtn();

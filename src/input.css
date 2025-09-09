@@ -1,17 +1,19 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 .section-properties {
   @apply w-full h-screen;
 }
+
 .glass-effect-button {
-  @apply px-6 py-3 rounded-xl text-white font-semibold 
-bg-white/10 backdrop-blur-lg border border-white/20 
-shadow-md hover:bg-white/20 transition;
+  @apply px-6 py-3 rounded-xl text-white font-semibold bg-white/10 backdrop-blur-lg border border-white/20 shadow-md hover:bg-white/20 transition;
 }
+
 .interfont {
   @apply font-[inter];
 }
+
 .main-text-color {
   @apply bg-gradient-to-t from-[#C6AFDB] to-[#FBFCFA] bg-clip-text text-transparent;
 }
@@ -20,16 +22,46 @@ shadow-md hover:bg-white/20 transition;
   font-weight: calc(100, 3vw, 900);
   font-style: normal;
 }
+
 /* media queries */
 .android-ios {
   @media (max-width: 500px) {
     font-size: clamp(0.5rem, 7vw, 6rem);
   }
 }
+
 /* Animations */
 .my-fade {
- animation: fadein 3s ease-in forwards;
+  animation: fadein 3s ease-in forwards;
 }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.drop-in {
+  animation: drop 1s ease-out forwards;
+}
+
+@keyframes drop {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 
 .tracking-in-contract {
   --final-spacing: clamp(1rem, 2vw, 3rem);
@@ -42,19 +74,33 @@ shadow-md hover:bg-white/20 transition;
     letter-spacing: 2em;
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     letter-spacing: var(--final-spacing);
     opacity: 1;
   }
 }
+
 /* colors */
 .gradient-text-dark-to-white {
-  background: linear-gradient(to top,#ffffff00, #3a3838 );
+  background: linear-gradient(to top, #ffffff00, #3a3838);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
