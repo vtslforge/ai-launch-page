@@ -93,7 +93,22 @@ function dropin() {
   });
 }
 
+// cards text change
+function textchange(){
+  const cbtn1 = document.getElementById("c_btn_1");
+  const cvbtn1 = document.getElementById("v_card1");
+  const hc1 = document.getElementById("h_c_1");
+  cbtn1.addEventListener("click",()=>{
+    hc1.classList.remove("hidden");
+
+  })
+}
+
+
+
+
 
 dropin();
 scrollable_card();
 placeholderbtn();
+textchange();

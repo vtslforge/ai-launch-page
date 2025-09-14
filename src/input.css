@@ -35,6 +35,9 @@
 .my-fade {
   animation: fadein 3s ease-in forwards;
 }
+.my-fadetext {
+  animation: fadein 1s ease-in forwards;
+}
 
 @keyframes fadein {
   from {
@@ -108,4 +111,8 @@
 .playfair {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
+}
+/* custom css */
+ #card1 {
+@apply <div id="card1" class="bg-gradient-to-t from-black via-black to-transparent h-auto min-h-2/5 w-full flex items-start justify-evenly flex-col p-3 gap-3">
 }
