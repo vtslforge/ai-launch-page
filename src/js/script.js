@@ -36,79 +36,15 @@ function placeholderbtn() {
   });
 }
 
-
-
-function scrollable_card() {
-  // Select both cards using their IDs
-  const cards = document.querySelectorAll('#scrollable-card, #scrollable-card2');
-
-  cards.forEach((card) => {
-    let isMousedown = false;
-    let startX;
-    let scrollLeft;
-    card.style.scrollBehavior = "smooth";
-    // Start dragging
-    card.addEventListener('mousedown', (e) => {
-      if (e.button !== 0) return; // Only left-click
-      isMousedown = true;
-      startX = e.pageX - card.offsetLeft;
-      scrollLeft = card.scrollLeft;
-    });
-
-    // Stop dragging on mouseup or leave
-    card.addEventListener('mouseup', () => { isMousedown = false; });
-    card.addEventListener('mouseleave', () => { isMousedown = false; });
-
-    // Dragging motion
-    card.addEventListener('mousemove', (e) => {
-      if (!isMousedown) return;
-      e.preventDefault();
-      const x = e.pageX - card.offsetLeft;
-      const walk = (x - startX) * 1; // Scroll speed multiplier
-      card.scrollLeft = scrollLeft - walk;
-    });
-  });
-
-}
-
-
-function dropin() {
-  document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("drop-in");
-          entry.target.classList.remove("translate-y-[-50px]", "opacity-0");
-          observer.unobserve(entry.target); // Animate only once
-        }
-      });
-    }, {
-      threshold: 0.5 // Trigger when 50% of the element is visible
-    });
-
-    const elements = document.querySelectorAll(".drop-element");
-    elements.forEach(el => {
-      observer.observe(el);
-    });
-  });
-}
-
-// cards text change
-function textchange(){
-  const cbtn1 = document.getElementById("c_btn_1");
-  const cvbtn1 = document.getElementById("v_card1");
-  const hc1 = document.getElementById("h_c_1");
-  cbtn1.addEventListener("click",()=>{
-    hc1.classList.remove("hidden");
-
-  })
-}
-
-
-
-
-
-dropin();
-scrollable_card();
 placeholderbtn();
-textchange();
+
+function scrolling_cards() {
+  let s_card1 = document.getElementById("scroll_card1");
+  let s_card2 = document.getElementById("scroll_card2");
+  const scroll_btn_1 = document.getElementById("scrollable_btn_right");
+
+
+
+
+}
+scrolling_cards()

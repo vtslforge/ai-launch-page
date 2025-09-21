@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+
 .section-properties {
   @apply w-full h-screen;
 }
@@ -113,6 +114,3 @@
   font-optical-sizing: auto;
 }
 /* custom css */
- #card1 {
-@apply <div id="card1" class="bg-gradient-to-t from-black via-black to-transparent h-auto min-h-2/5 w-full flex items-start justify-evenly flex-col p-3 gap-3">
-}
