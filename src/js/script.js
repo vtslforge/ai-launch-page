@@ -38,13 +38,28 @@ function placeholderbtn() {
 
 placeholderbtn();
 
-function scrolling_cards() {
-  let s_card1 = document.getElementById("scroll_card1");
-  let s_card2 = document.getElementById("scroll_card2");
-  const scroll_btn_1 = document.getElementById("scrollable_btn_right");
 
+function swipe_carousel() {
+  const carousel = document.getElementById("carousel");
+  const dots = document.querySelectorAll(".dot");
+  const cards = document.querySelectorAll(".cards");
 
+  function updateDots() {
+    const scrollIndex = Math.round(carousel.scrollLeft / carousel.clientWidth);
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("bg-amber-500", i === scrollIndex);
+      dot.classList.toggle("bg-amber-50", i !== scrollIndex);
+    });
+  }
 
+  carousel.addEventListener("scroll", () => {
+    updateDots();
+  });
 
+  // Initialize first dot
+  updateDots();
 }
-scrolling_cards()
+
+swipe_carousel();
+
+
