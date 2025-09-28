@@ -1,3 +1,4 @@
+/* Google Fonts Imports */
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
@@ -5,32 +6,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* Layout Properties */
 .section-properties {
   @apply w-full h-screen;
 }
 
+/* Button Styles */
 .glass-effect-button {
   @apply px-6 py-3 rounded-xl text-white font-semibold bg-white/10 backdrop-blur-lg border border-white/20 shadow-md hover:bg-white/20 transition;
 }
 
+/* Font Families */
 .interfont {
   @apply font-[inter];
 }
-.Roboto{
+
+.Roboto {
   @apply font-[Roboto];
 }
 
+.playfair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
+/* Text Colors & Effects */
 .main-text-color {
   @apply bg-gradient-to-t from-[#C6AFDB] to-[#FBFCFA] bg-clip-text text-transparent;
 }
+
+.gradient-text-dark-to-white {
+  background: linear-gradient(to top, #ffffff00, #3a3838);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Typography */
 .big-text {
   font-family: "Archivo Black", sans-serif;
   font-weight: calc(100, 3vw, 900);
   font-style: normal;
 }
 
-/* media queries */
+/* Media Queries */
 .android-ios {
   @media (max-width: 500px) {
     font-size: clamp(0.5rem, 7vw, 6rem);
@@ -41,6 +60,7 @@
 .my-fade {
   animation: fadein 3s ease-in forwards;
 }
+
 .my-fadetext {
   animation: fadein 1s ease-in forwards;
 }
@@ -49,7 +69,6 @@
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -64,14 +83,11 @@
     transform: translateY(-50px);
     opacity: 0;
   }
-
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
-
-
 
 .tracking-in-contract {
   --final-spacing: clamp(1rem, 2vw, 3rem);
@@ -84,42 +100,29 @@
     letter-spacing: 2em;
     opacity: 0;
   }
-
   40% {
     opacity: 0.6;
   }
-
   100% {
     letter-spacing: var(--final-spacing);
     opacity: 1;
   }
 }
 
-/* colors */
-.gradient-text-dark-to-white {
-  background: linear-gradient(to top, #ffffff00, #3a3838);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Scrollbar */
+/* Scrollbar Styles */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 
 .scrollbar-hide {
   -ms-overflow-style: none;
-  scrollbar-width: none;
-  /* Firefox */
+  scrollbar-width: none; /* Firefox */
 }
-/* font */
-.playfair {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-}
-/* custom css */
-/* mobile cards div element properties */
+
+/*  device Components */
 .mobile_card_div {
   @apply rounded-2xl flex-shrink-0 w-full h-auto aspect-video min-h-80 flex items-center justify-center text-xl bg-cover bg-center bg-no-repeat flex-col pl-3 pr-3 gap-3;
+}
+.md_screen_div{
+  @apply h-70 w-full aspect-video rounded-2xl bg-cover bg-center bg-no-repeat flex flex-col justify-center pl-3 pr-3 gap-3;
 }
