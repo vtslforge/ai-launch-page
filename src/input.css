@@ -1,19 +1,19 @@
 /* Google Fonts Imports */
-@import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Layout Properties */
 .section-properties {
-  @apply w-full h-screen;
+  @apply h-screen w-full;
 }
 
 /* Button Styles */
 .glass-effect-button {
-  @apply px-6 py-3 rounded-xl text-white font-semibold bg-white/10 backdrop-blur-lg border border-white/20 shadow-md hover:bg-white/20 transition;
+  @apply rounded-xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white shadow-md backdrop-blur-lg transition hover:bg-white/20;
 }
 
 /* Font Families */
@@ -26,7 +26,7 @@
 }
 
 .playfair {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-optical-sizing: auto;
 }
 
@@ -44,7 +44,7 @@
 
 /* Typography */
 .big-text {
-  font-family: "Archivo Black", sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   font-weight: calc(100, 3vw, 900);
   font-style: normal;
 }
@@ -89,6 +89,34 @@
   }
 }
 
+.review {
+  border: 2px solid #fef3c7; 
+  padding: 1rem 2rem;            /* give each review space */
+  margin-right: 1rem;            /* gap between reviews */
+  flex-shrink: 0;                /* don’t shrink */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Inter, sans-serif;
+  white-space: nowrap;           /* keep text on one line */
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  height: 100%;
+  animation: ticker-scroll 8s linear infinite;
+}
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); } /* scrolls half, duplicated */
+}
+
+
+
 .tracking-in-contract {
   --final-spacing: clamp(1rem, 2vw, 3rem);
   letter-spacing: var(--final-spacing);
@@ -121,70 +149,8 @@
 
 /*  device Components */
 .mobile_card_div {
-  @apply rounded-2xl flex-shrink-0 w-full h-auto aspect-video min-h-80 flex items-center justify-center text-xl bg-cover bg-center bg-no-repeat flex-col pl-3 pr-3 gap-3;
+  @apply flex aspect-video h-auto min-h-80 w-full flex-shrink-0 flex-col items-center justify-center gap-3 rounded-2xl bg-cover bg-center bg-no-repeat pr-3 pl-3 text-xl;
 }
-.md_screen_div{
-  @apply h-70 w-full aspect-video rounded-2xl bg-cover bg-center bg-no-repeat flex flex-col justify-center pl-3 pr-3 gap-3;
+.md_screen_div {
+  @apply flex aspect-video h-70 w-full flex-col justify-center gap-3 rounded-2xl bg-cover bg-center bg-no-repeat pr-3 pl-3;
 }
-
-
-
- .card-container {
-            /* Mobile: horizontal scroll */
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            gap: 0.75rem;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
-        
-        .card-container::-webkit-scrollbar {
-            display: none;
-        }
-        
-        .card {
-            flex: 0 0 100%;
-            scroll-snap-align: start;
-            min-height: 20rem;
-            border-radius: 1rem;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0.75rem;
-            gap: 0.75rem;
-        }
-        
-        /* Medium screens: 2x3 grid */
-        @media (min-width: 768px) {
-            .card-container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                overflow-x: visible;
-                gap: 0.75rem;
-            }
-            
-            .card {
-                flex: none;
-                height: 280px;
-            }
-        }
-        
-        /* Large screens: 3x2 grid */
-        @media (min-width: 1024px) {
-            .card-container {
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-                gap: 1.5rem;
-                width: 80%;
-                margin: 0 auto;
-            }
-        }
-        
-        .interfont {
-            font-family: 'Inter', sans-serif;
-        }

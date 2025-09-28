@@ -47,17 +47,33 @@ function swipe_carousel() {
   function updateDots() {
     const scrollIndex = Math.round(carousel.scrollLeft / carousel.clientWidth);
     dots.forEach((dot, i) => {
-      dot.classList.toggle("bg-amber-500", i === scrollIndex);
-      dot.classList.toggle("bg-amber-50", i !== scrollIndex);
+      dot.classList.toggle("bg-[#696969]", i === scrollIndex);
+      dot.classList.toggle("bg-gray-800", i !== scrollIndex);
     });
+    return scrollIndex;
   }
 
+  let currentIndex = updateDots(); // start from current position
+
   carousel.addEventListener("scroll", () => {
-    updateDots();
+    currentIndex = updateDots(); // update index when user swipes
   });
 
-  // Initialize first dot
   updateDots();
+
+  // Auto-scroll every 2 seconds
+  setInterval(() => {
+    currentIndex++;
+    if (currentIndex >= cards.length) currentIndex = 0; // loop back
+
+    const cardWidth = carousel.clientWidth;
+    carousel.scrollTo({
+      left: cardWidth * currentIndex,
+      behavior: "smooth"
+    });
+
+    updateDots();
+  }, 8000);
 }
 
 swipe_carousel();

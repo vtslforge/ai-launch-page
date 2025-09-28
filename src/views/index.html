@@ -18,8 +18,9 @@
   <main class="bg-black w-full">
     <!-- section_1 start -->
     <section
-      class="section-properties flex flex-col justify-center items-center relative bg-[url('../assets/heroback.svg')] bg-cover bg-center bg-no-repeat bg-black/80 bg-blend-overlay">
-      <section class="h-2/3 w-full sm:w-11/12 md:w-10/12 lg:w-6/12 flex justify-evenly items-center flex-col">
+      class="section-properties flex flex-col justify-center items-center relative bg-[url('../assets/heroback.png')] bg-cover bg-center bg-no-repeat h-screen">
+      <section
+        class="h-full pt-6 pb-9 w-full sm:w-11/12 md:w-10/12 lg:w-8/12 flex justify-evenly items-center flex-col ">
         <button
           class="border-white border-t-2 flex justify-evenly items-center rounded-full cursor-pointer h-15 w-15 p-1 my-fade">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 44.343 46">
@@ -34,22 +35,23 @@
             </path>
           </svg>
         </button>
-        <article>
-          <p
-            class="cursor-default leading-tight text-5xl interfont font-extrabold text-center bg-gradient-to-r from-[#baa85a] via-[#bc5bdf] to-[#1b25e4] bg-clip-text text-transparent">
-            Next Big Thing Loading…
-          </p>
+        <article
+          class="w-4/5 cursor-default leading-tight text-4xl md:text-5xl lg:text-6xl interfont font-light text-center text-white bg-clip-text">
+          <span class="">Experience the</span>
+          <span class="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">Future of
+            Intelligence</span>
+          <span class="">with AI That Delivers
+          </span>
         </article>
         <article
-          class="h-3/4 w-full max-w-9/10 sm:max-w-sm md:max-w-md lg:max-w-xl flex justify-evenly flex-col items-center rounded-3xl">
-          <p class="interfont main-text-color text-3xl font-bold cursor-default">
+          class="h-2/4 w-full max-w-9/10 sm:max-w-sm md:max-w-md lg:max-w-xl flex justify-evenly flex-col items-center rounded-3xl">
+          <p class="text-center interfont text-sm lg:text-lg text-white ml-5 mr-5 cursor-default">
+            Harness cutting-edge technology that learns, adapts, and transforms your world
+          </p>
+          <p class="interfont main-text-color text-2xl font-bold cursor-default">
             Join our waitlist
           </p>
-          <p class="text-center interfont text-xl text-white ml-5 mr-5 cursor-default">
-            Join our newsletter and stay ahead of the curve! Get the latest
-            updates and exclusive insights on Aethermind, delivered straight
-            to your inbox.
-          </p>
+
           <div class="gap-5 flex justify-center h-2/12 w-full">
             <div class="bg-[#141318] max-h-12 w-max flex items-center rounded-full pl-4">
               <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
@@ -86,15 +88,35 @@
                 </path>
               </svg>
             </button>
+
           </article>
+
         </article>
+
+        <div
+          class="carousel-container w-full h-auto border-2 border-amber-50 flex flex-col justify-center overflow-hidden">
+          <p class="text-white interfont text-lg font-light mb-4 px-4">Early Reviews</p>
+          <div class="ticker flex h-3/4 items-center overflow-hidden px-3">
+            <div class="ticker-track">
+              <span class="review">Review 1: sdfasdf afsdfasdf</span>
+              <span class="review">Review 2: lorem ipsum</span>
+              <span class="review">Review 3: another review</span>
+              <span class="review">Review 4: feedback text</span>
+              <span class="review">Review 5: nice product</span>
+
+              <!-- duplicate for seamless loop -->
+              <span class="review">Review 1: sdfasdf afsdfasdf</span>
+              <span class="review">Review 2: lorem ipsum</span>
+              <span class="review">Review 3: another review</span>
+              <span class="review">Review 4: feedback text</span>
+              <span class="review">Review 5: nice product</span>
+            </div>
+          </div>
+        </div>
+
+
+
       </section>
-      <div class="overflow-hidden absolute bottom-0 left-0 right-0 w-full text-center flex pl-2 justify-center">
-        <p
-          class="cursor-default p-0 m-0 text-[clamp(2rem,8vw,12rem)] android-ios leading-[1] big-text font-extrabold gradient-text-dark-to-white tracking-in-contract">
-          AETHERMIND
-        </p>
-      </div>
     </section>
     <!-- section 1 ends -->
     <!-- section 2 start -->
@@ -238,12 +260,12 @@
       </div>
       <!-- Dot indicators -->
       <div class="flex justify-center gap-2 mt-3 md:hidden">
-        <button class="dot rounded-full w-3 h-3 bg-amber-50"></button>
-        <button class="dot rounded-full w-3 h-3 bg-amber-50"></button>
-        <button class="dot rounded-full w-3 h-3 bg-amber-50"></button>
-        <button class="dot rounded-full w-3 h-3 bg-amber-50"></button>
-        <button class="dot rounded-full w-3 h-3 bg-amber-50"></button>
-        <button class="dot rounded-full w-3 h-3 bg-amber-50"></button>
+        <button class="dot rounded-full w-3 h-3 bg-gray-800"></button>
+        <button class="dot rounded-full w-3 h-3 bg-gray-800"></button>
+        <button class="dot rounded-full w-3 h-3 bg-gray-800"></button>
+        <button class="dot rounded-full w-3 h-3 bg-gray-800"></button>
+        <button class="dot rounded-full w-3 h-3 bg-gray-800"></button>
+        <button class="dot rounded-full w-3 h-3 bg-gray-800"></button>
       </div>
       <!-- md screen -->
       <div class="h-full gap-3 w-full hidden md:flex lg:hidden">
