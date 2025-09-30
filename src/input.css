@@ -56,8 +56,6 @@
   }
 }
 
-
-
 /* Animations */
 .my-fade {
   animation: fadein 3s ease-in forwards;
@@ -90,40 +88,6 @@
     opacity: 1;
   }
 }
-
-/* ticker component */
-.profile_para{
-  @apply h-full flex w-2xs text-[.8em] items-center 
-}
-.profile_image{
-  @apply h-3/5
-}
-
-.review {   
-  margin-right: 1rem;            /* gap between reviews */
-  flex-shrink: 0; 
-  gap:0.75rem;              /* don’t shrink */
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  width: max-content;
-  color: white;
-  font-family: Inter, sans-serif;
-}
-
-.ticker-track {
-  display: flex;
-  width: max-content;
-  height: 100%;
-  animation: ticker-scroll 15s linear infinite;
-}
-
-@keyframes ticker-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); } /* scrolls half, duplicated */
-}
-
-
 
 .tracking-in-contract {
   --final-spacing: clamp(1rem, 2vw, 3rem);
