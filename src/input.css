@@ -108,6 +108,25 @@
     opacity: 1;
   }
 }
+/* on scroll animation */
+
+.show_start {
+  opacity: 0;
+}
+
+.show {
+  animation: fade 500ms ease-in-out forwards;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 /* Scrollbar Styles */
 .scrollbar-hide::-webkit-scrollbar {
