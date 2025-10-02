@@ -160,7 +160,7 @@ function innertexts() {
     }
   ];
 
-  // Apply updates
+  // Applying updates
   mappings.forEach(({ selectors, type, content }) => {
     document.querySelectorAll(selectors).forEach(el => {
       if (type === "text") {
