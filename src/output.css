@@ -485,20 +485,50 @@
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\.\.\/assets\'\)\] {
+    background-image: url('../assets');
+  }
+  .bg-\[url\(\'\.\.\/assets\/44\.png\'\)\] {
+    background-image: url('../assets/44.png');
+  }
   .bg-\[url\(\'\.\.\/assets\/44\.svg\'\)\] {
     background-image: url('../assets/44.svg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/45\.pn\'\)\] {
+    background-image: url('../assets/45.pn');
+  }
+  .bg-\[url\(\'\.\.\/assets\/45\.png\'\)\] {
+    background-image: url('../assets/45.png');
   }
   .bg-\[url\(\'\.\.\/assets\/45\.svg\'\)\] {
     background-image: url('../assets/45.svg');
   }
+  .bg-\[url\(\'\.\.\/assets\/46\.png\'\)\] {
+    background-image: url('../assets/46.png');
+  }
   .bg-\[url\(\'\.\.\/assets\/46\.svg\'\)\] {
     background-image: url('../assets/46.svg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/47\.png\'\)\] {
+    background-image: url('../assets/47.png');
   }
   .bg-\[url\(\'\.\.\/assets\/47\.svg\'\)\] {
     background-image: url('../assets/47.svg');
   }
+  .bg-\[url\(\'\.\.\/assets\/48\.png\'\)\] {
+    background-image: url('../assets/48.png');
+  }
   .bg-\[url\(\'\.\.\/assets\/48\.svg\'\)\] {
     background-image: url('../assets/48.svg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/49\.\'\)\] {
+    background-image: url('../assets/49.');
+  }
+  .bg-\[url\(\'\.\.\/assets\/49\.pn\'\)\] {
+    background-image: url('../assets/49.pn');
+  }
+  .bg-\[url\(\'\.\.\/assets\/49\.png\'\)\] {
+    background-image: url('../assets/49.png');
   }
   .bg-\[url\(\'\.\.\/assets\/49\.svg\'\)\] {
     background-image: url('../assets/49.svg');
