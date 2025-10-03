@@ -16,14 +16,15 @@
   @apply rounded-xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white shadow-md backdrop-blur-lg transition hover:bg-white/20;
 }
 
-/* Font Families */
+/* Custom font classes */
 .interfont {
-  @apply font-[inter];
+  font-family: 'Inter', sans-serif;
 }
 
 .Roboto {
-  @apply font-[Roboto];
+  font-family: 'Roboto', sans-serif;
 }
+
 
 .playfair {
   font-family: 'Playfair Display', serif;

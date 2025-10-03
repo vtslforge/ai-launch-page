@@ -282,6 +282,9 @@
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
   .h-auto {
     height: auto;
   }
@@ -321,11 +324,17 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
   .w-15 {
     width: calc(var(--spacing) * 15);
   }
   .w-24 {
     width: calc(var(--spacing) * 24);
+  }
+  .w-auto {
+    width: auto;
   }
   .w-full {
     width: 100%;
@@ -437,6 +446,10 @@
     border-top-right-radius: calc(infinity * 1px);
     border-bottom-right-radius: calc(infinity * 1px);
   }
+  .rounded-b {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -485,30 +498,6 @@
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\'\.\.\/assets\/44\.png\'\)\] {
-    background-image: url('../assets/44.png');
-  }
-  .bg-\[url\(\'\.\.\/assets\/45\.png\'\)\] {
-    background-image: url('../assets/45.png');
-  }
-  .bg-\[url\(\'\.\.\/assets\/46\.png\'\)\] {
-    background-image: url('../assets/46.png');
-  }
-  .bg-\[url\(\'\.\.\/assets\/47\.png\'\)\] {
-    background-image: url('../assets/47.png');
-  }
-  .bg-\[url\(\'\.\.\/assets\/48\.png\'\)\] {
-    background-image: url('../assets/48.png');
-  }
-  .bg-\[url\(\'\.\.\/assets\/49\.png\'\)\] {
-    background-image: url('../assets/49.png');
-  }
-  .bg-\[url\(\'\.\.\/assets\/bgpic\.png\'\)\] {
-    background-image: url('../assets/bgpic.png');
-  }
-  .bg-\[url\(\'\.\/assets\/49\.png\'\)\] {
-    background-image: url('./assets/49.png');
-  }
   .bg-\[url\(\'\/assets\/44\.png\'\)\] {
     background-image: url('/assets/44.png');
   }
@@ -527,23 +516,11 @@
   .bg-\[url\(\'\/assets\/49\.png\'\)\] {
     background-image: url('/assets/49.png');
   }
-  .bg-\[url\(\'\/assets\/bgpic\.png\'\)\] {
-    background-image: url('/assets/bgpic.png');
-  }
-  .bg-\[url\(\'\/bgpic\.png\'\)\] {
-    background-image: url('/bgpic.png');
-  }
   .bg-\[url\(\'assets\/44\.png\'\)\] {
     background-image: url('assets/44.png');
   }
-  .bg-\[url\(\'assets\/49\.png\'\)\] {
-    background-image: url('assets/49.png');
-  }
   .bg-\[url\(\'assets\/bgpic\.png\'\)\] {
     background-image: url('assets/bgpic.png');
-  }
-  .bg-\[url\(\'assets\/bgpifdc\.png\'\)\] {
-    background-image: url('assets/bgpifdc.png');
   }
   .from-blue-500 {
     --tw-gradient-from: var(--color-blue-500);
@@ -585,6 +562,15 @@
   }
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-9 {
+    padding-bottom: calc(var(--spacing) * 9);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
   }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
@@ -801,6 +787,12 @@
       max-width: var(--container-xl);
     }
   }
+  .lg\:text-4xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
   .lg\:text-6xl {
     @media (width >= 64rem) {
       font-size: var(--text-6xl);
@@ -858,10 +850,10 @@
   }
 }
 .interfont {
-  font-family: inter;
+  font-family: 'Inter', sans-serif;
 }
 .Roboto {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
 .playfair {
   font-family: 'Playfair Display', serif;
