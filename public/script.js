@@ -189,3 +189,64 @@ innertexts();
 })();
 
 
+(function () {
+  const descHeading  = document.getElementById("descHeading");
+  const descContent1 = document.getElementById("descContent1");
+  const descContent2 = document.getElementById("descContent2");
+  const descContent3 = document.getElementById("descContent3");
+  const descContent4 = document.getElementById("descContent4");
+  const descContent5 = document.getElementById("descContent5");
+  const pricingType  = document.getElementById("pricingType");
+  const pricingValue = document.getElementById("pricingValue");
+  const pricingDescription = document.getElementById("pricingDescription");
+
+
+    const onclickStarter = document.getElementById("starter");
+    onclickStarter.addEventListener("click", () => {
+    descHeading.textContent  = "Starter details"
+    descContent1.textContent = "Free forever"
+    descContent2.textContent = "Access to basic AI tools"
+    descContent3.textContent = "Limited daily requests"
+    descContent4.textContent = "Community access"
+    descContent5.textContent = "Basic cloud storage for prompts"
+    pricingType.textContent  = "Starter plan"
+    pricingValue.textContent = "0$"
+    pricingDescription.textContent = "A perfect entry point to explore the power of AI"
+  })
+    const onclickStandard = document.getElementById("standard");
+    onclickStandard.addEventListener("click", () => {
+    descHeading.textContent  = "Standard benifits"
+    descContent1.textContent = "Everything in Starter"
+    descContent2.textContent = "AI models with higher accuracy"
+    descContent3.textContent = "High-resolution image generation"
+    descContent4.textContent = "Prompt history & saved projects"
+    descContent5.textContent = "Analytics dashboard"
+    pricingType.textContent  = "Standard Plan"
+    pricingValue.textContent = "10$"
+    pricingDescription.textContent = "Upgrade your workflow with faster AI responses"
+  })
+    const onclickPremium = document.getElementById("premium");
+    onclickPremium.addEventListener("click", () => {
+    descHeading.textContent  = "Premium benifits"
+    descContent1.textContent = "Everything in Standard"
+    descContent2.textContent = "Priority processing"
+    descContent3.textContent = "Unlimited generations & uploads"
+    descContent4.textContent = "Access to all AI modules"
+    descContent5.textContent = "Custom AI personalities & workflows"
+    pricingType.textContent  = "Premium Plan"
+    pricingValue.textContent = "20$"
+    pricingDescription.textContent = "For professionals who rely on AI daily"
+  })
+    const onclickEnterprise = document.getElementById("enterprise");
+    onclickEnterprise.addEventListener("click", () => {
+    descHeading.textContent  = "Enterprise benifits"
+    descContent1.textContent = "Everything in Enterprise"
+    descContent2.textContent = "Custom AI model integration"
+    descContent3.textContent = "Team collaboration dashboard"
+    descContent4.textContent = "API access with developer controls"
+    descContent5.textContent = "Advanced security & compliance"
+    pricingType.textContent  = "Enterprise Plan"
+    pricingValue.textContent = "45$"
+    pricingDescription.textContent = "Tailored for businesses, teams, and developers"
+  })
+})();

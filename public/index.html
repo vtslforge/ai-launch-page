@@ -541,7 +541,7 @@
     </section>
     <!-- section 2 ends -->
     <!-- section 3 starts -->
-    <section class="w-full h-auto p-3 bg-[#111213] flex flex-col">
+    <section class="w-full h-auto p-3 bg-[#111213] flex flex-col rounded-2xl rounded-t-0">
       <div class="text-white w-full  flex justify-center items-center flex-col gap-6 pb-15">
         <p
           class="interfont font-light text-2md md:text-4xl lg:text-6xl lg:w-2/3 text-center text-white show_start show_target">
@@ -558,7 +558,69 @@
             alt="Cross-Platform-image "></div>
       </div>
     </section>
-    <section class="section-properties"></section>
+    <!-- section 4 start -->
+    <section class="h-fit w-full flex justify-center flex-col show_start show_target items-center gap-3">
+      <p class="interfont font-light text-2md md:text-4xl lg:text-6xl text-center text-white show_start show_target mt-3">
+        Affordable plans designed for you</p>
+      <div class="w-full grid grid-rows-8 lg:grid-cols-6 grid-cols-4 p-3 lg:w-3/4 xl:w-2/3">
+        <!-- buttons -->
+        <div class="grid_apply row-start-1 row-end-2 col-start-1 col-end-3 pl-3 pr-3 md:col-start-1 md:col-end-1 ">
+          <button id="starter" class="h-full w-full rounded-2xl max-h-7 min-h-12 bg-white">Starter</button>
+        </div>
+        <div class="grid_apply row-start-1 row-end-2 col-start-3   col-end-5 pl-3 pr-3 md:col-start-2 md:col-end-3 ">
+          <button id="standard" class="h-full w-full rounded-2xl max-h-7 min-h-12 bg-white">Standard</button>
+        </div>
+        <div
+          class="grid_apply row-start-2 row-end-3 col-start-1  col-end-3 pl-3 pr-3 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-1 ">
+          <button id="premium" class="h-full w-full rounded-2xl max-h-7 min-h-12 bg-white">Premium</button>
+        </div>
+        <div
+          class="grid_apply row-start-2 row-end-3 col-start-3   col-end-5 pl-3 pr-3 md:col-start-4 md:col-end-5 md:row-start-1 md:row-end-1 ">
+          <button id="enterprise" class="h-full w-full rounded-2xl max-h-7 min-h-12 bg-white">Enterprise</button>
+        </div>
+        <!-- text area 1 -->
+        <div
+          class="grid_apply row-start-3 row-end-5 col-start-1 col-end-5  md:col-start-1 md:col-end-5 md:row-start-2 md:row-end-4 lg:row-end-9 text-white">
+          <div class="w-full h-full flex flex-col pl-3 pr-3 md:text-2xl lg:pt-6 lg:gap-3">
+            <p id="descHeading" class="text-white interfont text-2xl lg:text-6xl">Starter details</p>
+            <div class="flex gap-1"><i class="text-white ri-checkbox-circle-line"></i>
+              <p id="descContent1" class="text-white interfont">Free forever</p>
+            </div>
+            <div class="flex gap-1"><i class="text-white ri-checkbox-circle-line"></i>
+              <p id="descContent2" class="text-white interfont">Access to basic AI tools</p>
+            </div>
+            <div class="flex gap-1"><i class="text-white ri-checkbox-circle-line"></i>
+              <p id="descContent3" class="text-white interfont">Limited daily requests</p>
+            </div>
+            <div class="flex gap-1"><i class="text-white ri-checkbox-circle-line"></i>
+              <p id="descContent4" class="text-white interfont">Community access</p>
+            </div>
+            <div class="flex gap-1"><i class="text-white ri-checkbox-circle-line"></i>
+              <p id="descContent5" class="text-white interfont">Basic cloud storage for prompts</p>
+            </div>
+          </div>
+        </div>
+        <!-- text area 2 -->
+        <div
+          class="grid_apply row-start-5 row-end-10 col-start-1  col-end-5  md:col-start-1 md:col-end-5 md:row-start-4 md:row-end-9 lg:row-start-1 lg:col-start-5 lg:col-start-7 mt-6 lg:mt-0 ">
+          <div class="h-full w-full flex justify-between flex-col pt-3 pb-3 rounded-2xl bg-[#111213]">
+            <div class=" items-center text-white interfont text-lg ">
+              <p id="pricingType" class="pl-3 ">Starter plan</p>
+            </div>
+            <div class=" flex-row flex items-end gap-1 pl-3">
+              <p id="pricingValue" class="text-white text-6xl interfont">0$</p>
+              <p class="text-white interfont text-lg">per month</p>
+            </div>
+            <div class=" text-white interfont text-lg pl-3 pr-3 text-center">
+              <p id="pricingDescription">A perfect entry point to explore the power of AI</p>
+            </div>
+            <div class=" flex justify-center"><button id="pricingButton"
+                class="bg-white rounded-2xl min-h-9 w-1/2 interfont max-w-35">Get
+                started</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <script src="script.js"></script>
 </body>

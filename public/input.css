@@ -19,6 +19,7 @@
 /* Custom font classes */
 .interfont {
   font-family: 'Inter', sans-serif;
+  opacity:0.8;
 }
 
 .Roboto {
@@ -145,4 +146,7 @@
 }
 .md_screen_div {
   @apply flex aspect-video h-70 w-full flex-col justify-center gap-3 rounded-2xl bg-cover bg-center bg-no-repeat pr-3 pl-3;
+}
+.grid_apply{
+  @apply flex flex-col justify-center items-start
 }
