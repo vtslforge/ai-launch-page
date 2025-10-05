@@ -19,7 +19,17 @@
 /* Custom font classes */
 .interfont {
   font-family: 'Inter', sans-serif;
+  font-weight: 200;
 }
+
+.buttonhover {
+  @apply hover:rounded-2xl hover:bg-transparent hover:text-white hover:border-2 hover:border-white
+  transition-all duration-600 ease-in-out  ;
+}
+button{
+  font-weight: 400;
+}
+
 
 .Roboto {
   font-family: 'Roboto', sans-serif;
@@ -31,17 +41,6 @@
   font-optical-sizing: auto;
 }
 
-/* Text Colors & Effects */
-.main-text-color {
-  @apply bg-gradient-to-t from-[#C6AFDB] to-[#FBFCFA] bg-clip-text text-transparent;
-}
-
-.gradient-text-dark-to-white {
-  background: linear-gradient(to top, #ffffff00, #3a3838);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
 /* Typography */
 .big-text {
@@ -59,7 +58,7 @@
 
 /* Animations */
 .my-fade {
-  animation: fadein 3s ease-in forwards;
+  animation: fadein 1s ease-in forwards;
 }
 
 .my-fadetext {
